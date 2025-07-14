@@ -14,4 +14,5 @@ where hiredate like "____-01-__";
 
 -- combined
 select * from emp
-where job like "_a%";
+where job like "_a%";.
+
