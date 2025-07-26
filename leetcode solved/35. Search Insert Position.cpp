@@ -32,7 +32,7 @@ int main() {
 	Solution sol;
 	vector<int> nums = {1,3};
 	int target = 3;
-
+	
 	int result = sol.searchInsert(nums, target);
 	cout << "Insert position: " << result << endl;
 
