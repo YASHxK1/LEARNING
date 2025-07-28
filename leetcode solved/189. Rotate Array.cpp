@@ -1,27 +1,21 @@
-#include <iostream>
-#include <vector>
-#include <list>
-using namespace std;
-
 class Solution {
 public:
     void rotate(vector<int>& nums, int k) {
-        
+        int n = nums.size();
+        k %= n;
+        reverseSection(nums, 0, n - 1);
+        reverseSection(nums, 0, k - 1);
+        reverseSection(nums, k, n - 1);
+    }
+        void reverseSection(vector<int>& nums, int left, int right) {
+        while (left < right) {
+        // Manual swap without using std::swap
+             int temp = nums[left];
+             nums[left] = nums[right];
+             nums[right] = temp;
 
-        
-
-        
+        left++;
+        right--;
+    }        
     }
 };
-
-int main() {
-    Solution sol;
-
-    vector<int> nums1 = {1, 2, 3, 4, 5, 6, 7};
-    int k1 = 3;
-    sol.rotate(nums1, k1);
-    for (int n : nums1) cout << n << " ";
-    cout << endl;
-    
-    return 0;
-}
