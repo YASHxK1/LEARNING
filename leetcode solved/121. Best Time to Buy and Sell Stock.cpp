@@ -36,6 +36,7 @@ public:
          return profit;
     }
 };
+
 //just write main function 
 int main() {
     Solution sol;
