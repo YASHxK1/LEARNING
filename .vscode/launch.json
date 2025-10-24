@@ -2,6 +2,28 @@
   "version": "0.2.0",
   "configurations": [
     {
+      "type": "java",
+      "name": "Review",
+      "request": "launch",
+      "mainClass": "Review",
+      "projectName": "LEARNING_63c3bee8"
+    },
+    {
+      "type": "java",
+      "name": "javacode",
+      "request": "launch",
+      "mainClass": "javacode",
+      "projectName": "LEARNING_63c3bee8"
+    },
+    {
+      "type": "java",
+      "name": "Run Java File",
+      "request": "launch",
+      "mainClass": "${fileBasenameNoExtension}",
+      "cwd": "${fileDirname}",
+      "console": "integratedTerminal"
+    },
+    {
       "name": "Run C++ File",
       "type": "cppvsdbg",
       "request": "launch",
@@ -10,8 +32,7 @@
       "stopAtEntry": false,
       "cwd": "${fileDirname}",
       "environment": [],
-      "console": "integratedTerminal",
-      "preLaunchTask": "C/C++: g++.exe build active file"
+      "console": "integratedTerminal"
     }
   ]
 }
