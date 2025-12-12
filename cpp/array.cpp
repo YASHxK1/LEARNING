@@ -7,7 +7,7 @@ int main() {
     int pos = 2; // index of element to delete (30)
 
     // Shift elements to left from pos
-    for (int i = pos; i < size - 1; i++) {
+    for (int i = pos; i < size - 1; i++)    {
         arr[i] = arr[i + 1];
     }
 
