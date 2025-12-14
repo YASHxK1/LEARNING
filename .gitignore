@@ -1,1 +1,4 @@
 /Java/.idea
+# Ignore VS Code settings for C++ and Java projects
+cpp/.vscode
+Java/.vscode
