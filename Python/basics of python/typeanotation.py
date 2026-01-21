@@ -9,4 +9,3 @@ first_name:str='bob' #If the int is not used, it will show the error in the edit
 
 #use f-string
 print(f'Name: {first_name}, age{age}')
-
